@@ -1,0 +1,85 @@
+body {
+	font: 12px sans-serif;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	background: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 12px 0;
+	line-height: 1.1;
+}
+/*====================================*/
+/*Navbar CSS - lots of work to do...*/
+#stripe {
+	text-align: center;
+	height: 30px;
+	background: white;
+	font-family: "Montserrat";
+	font-weight: 700;
+	text-transform: uppercase;
+  border: 1px solid steelblue;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+#colorDisplay{
+	font-size: 200%;
+}
+
+button {
+	border: none;
+	background: none;
+	outline: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all, 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
+/*=====================*/
+/*Table CSS - this needs to be updated, lots of work to do */
+table {
+        border-collapse: collapse;
+        border: 1px solid #4C4C4C;
+        width: 500px;
+}
+.header {
+    background: cornflowerblue;
+    padding: 0px 50px;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Garamond;
+    font-size: 150%;
+}
+
+.work-in-progress {
+  color: salmon;
+}
+
+.supersmall {
+  font-size: 50%;
+  text-align: right;
+  text-transform: lowercase;
+}
+
+td {
+    border: 1px dotted #707070;
+    padding: 4px;
+}
