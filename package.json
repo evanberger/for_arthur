@@ -30,19 +30,24 @@
     "style-loader": "^0.13.1"
   },
   "dependencies": {
-    "apollo-client": "^0.4.15",
+    "apollo-client": "^0.4.19",
     "apollo-server": "^0.2.8",
     "body-parser": "^1.15.2",
     "d3": "^4.2.3",
     "domready": "^1.0.8",
     "express": "^4.14.0",
     "graphql": "^0.7.0",
+    "graphql-tag": "^0.1.14",
     "graphql-tools": "^0.6.6",
     "mantra-core": "^1.7.0",
     "meteor-node-stubs": "^0.2.3",
     "react": "^15.0.0",
+    "react-apollo": "^0.5.7",
     "react-dom": "^15.0.0",
     "react-mounter": "^1.2.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "react-tap-event-plugin": "^1.0.0",
     "topojson": "^1.6.27"
   },
   "private": true
