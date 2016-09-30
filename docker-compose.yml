@@ -1,0 +1,11 @@
+energy:
+  image: meteorhacks/meteord:devbuild
+  ports:
+   - "8080:80"
+  links:
+   - mongo
+  environment:
+   - ROOT_URL=http://energy.local
+
+mongo:
+  image: mongo:latest
