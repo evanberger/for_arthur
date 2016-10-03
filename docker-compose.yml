@@ -5,6 +5,7 @@ energy:
   links:
    - mongo
   environment:
+   - REPO=https://github.com/evanberger/for_arthur
    - ROOT_URL=http://energy.local
 
 mongo:
