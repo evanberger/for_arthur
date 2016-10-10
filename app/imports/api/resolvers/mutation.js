@@ -1,7 +1,7 @@
 import {Buildings, Hours} from '../../collections';
 
 export default {
-  async createBuilding(_, {building}) {
+  createBuilding(_, {building}) {
     building.createdAt = new Date();
     building._id = Buildings.insert(building);
 
