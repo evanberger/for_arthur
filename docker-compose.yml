@@ -1,12 +1,16 @@
-energy:
-  image: meteorhacks/meteord:devbuild
+app:
+  image: athyuttamre/meteord:volbuild
   ports:
-   - "8080:80"
+   - 8080:80
   links:
    - mongo
+  volumes:
+   - ./app:/app
   environment:
-   - REPO=https://github.com/evanberger/for_arthur
    - ROOT_URL=http://energy.local
+   - METEORD_VOLBUILD=./app
+   - VIRTUAL_HOST=energy.local
+   - ARGS=--port 80
 
 mongo:
   image: mongo:latest
