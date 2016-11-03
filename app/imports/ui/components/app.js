@@ -1,19 +1,16 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import Header from './header';
 
-class App extends React.Component {
-  render() {
-    return (
+const App = ({ children }) => {
+  return (
+    <div>
+      <Header />
+
       <div>
-
-        <h1>IceBank</h1>
-
-        <div>
-          {this.props.children}
-        </div>
+        {children}
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default App;

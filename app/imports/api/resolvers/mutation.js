@@ -5,8 +5,6 @@ export default {
     building.createdAt = new Date();
     building._id = Buildings.insert(building);
 
-    console.log(building)
-
     return building;
   }
-}
+};

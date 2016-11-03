@@ -12,15 +12,15 @@ const BUILDINGS_QUERY = gql`
       createdAt
       existingRate
       iceStorageRate
-      airCooled
+      chillerType
       chillerTonnage
-      chillerEfficiency
-      dualDutyCoolingChillerEfficiency
-      dualDutyIceMakingEfficiency
+      standardChillerEfficiency
+      ddChillerEfficiency
+      iceMakingEfficiency
       monthsCooling
-      savingsDownsizingPipes
-      savingsDownsizingPumps
-      savingsRoundDuctwork
+      downsizeDuctSavings
+      downsizePipeSavings
+      roundDuctSavings
       additionalCostsIceStorageInstallation
       user
     }

@@ -21,7 +21,7 @@ const store = createStore(
   combineReducers(reducers),
   compose(
     applyMiddleware(client.middleware()),
-    devtoolsExt || (f => f),
+    devtoolsExt || (f => f)
   )
 );
 
