@@ -1,7 +1,7 @@
-import {Buildings, Hours} from '../../collections';
+import {Buildings} from '../../collections';
 
 export default {
-  hours: ({_id}) => {
-    return Hours.find({building: _id}).fetch()
+  hours: ({ hours }) => {
+    return hours;
   }
 }

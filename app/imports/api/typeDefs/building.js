@@ -1,5 +1,3 @@
-import Hour from './hour'
-
 const BuildingInput = `
   input HoursInput {
     hour1: Float
@@ -54,6 +52,33 @@ const BuildingInput = `
 `;
 
 const Building = `
+  type Hours {
+    hour1: Float
+    hour2: Float
+    hour3: Float
+    hour4: Float
+    hour5: Float
+    hour6: Float
+    hour7: Float
+    hour8: Float
+    hour9: Float
+    hour10: Float
+    hour11: Float
+    hour12: Float
+    hour13: Float
+    hour14: Float
+    hour15: Float
+    hour16: Float
+    hour17: Float
+    hour18: Float
+    hour19: Float
+    hour20: Float
+    hour21: Float
+    hour22: Float
+    hour23: Float
+    hour24: Float
+  }
+
   type Building {
     _id: ID
     name: String
@@ -65,7 +90,7 @@ const Building = `
     icemakingChillerCost: Int
     icebankCost: Int
     hxCost: Int
-    hours: HoursInput
+    hours: Hours
     existingRate: Int
     iceStorageRate: Int
     airCooled: Boolean
@@ -79,8 +104,7 @@ const Building = `
     roundDuctSavings: Int
     additionalCostsIceStorageInstallation: Int
     user: String
-    hours: [Hour]
   }
 `;
 
-export default () => [Building, Hour, BuildingInput];
+export default () => [Building, BuildingInput];
