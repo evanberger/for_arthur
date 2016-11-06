@@ -41,6 +41,7 @@ class NewBuilding extends React.Component {
         hour10: this.refs.hour10.value,
         hour11: this.refs.hour11.value,
         hour12: this.refs.hour12.value,
+        hour13: this.refs.hour13.value,
         hour14: this.refs.hour14.value,
         hour15: this.refs.hour15.value,
         hour16: this.refs.hour16.value,
@@ -73,6 +74,7 @@ class NewBuilding extends React.Component {
     this.refs.hour10.value = templateSelected.hours.hour10;
     this.refs.hour11.value = templateSelected.hours.hour11;
     this.refs.hour12.value = templateSelected.hours.hour12;
+    this.refs.hour13.value = templateSelected.hours.hour13;
     this.refs.hour14.value = templateSelected.hours.hour14;
     this.refs.hour15.value = templateSelected.hours.hour15;
     this.refs.hour16.value = templateSelected.hours.hour16;
