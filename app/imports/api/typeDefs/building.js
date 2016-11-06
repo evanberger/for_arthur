@@ -28,25 +28,25 @@ const BuildingInput = `
 
   input BuildingInput {
     name: String
-    existingRate: Int
-    iceStorageRate: Int
+    existingRate: Float
+    iceStorageRate: Float
     chillerType: String
-    chillerTonnage: Int
-    chillerEfficiency: Int
-    ddChillerEfficiency: Int
-    iceMakingEfficiency: Int
-    monthsCooling: Int
-    downsizeDuctSavings: Int
-    downsizePipeSavings: Int
-    roundDuctSavings: Int
-    additionalCostsIceStorageInstallation: Int
-    rebate: Int
+    chillerTonnage: Float
+    chillerEfficiency: Float
+    ddChillerEfficiency: Float
+    iceMakingEfficiency: Float
+    monthsCooling: Float
+    downsizeDuctSavings: Float
+    downsizePipeSavings: Float
+    roundDuctSavings: Float
+    additionalCostsIceStorageInstallation: Float
+    rebate: Float
     template: String
-    standardChillerEfficiency: Int
-    nonIceChillerCost: Int
-    icemakingChillerCost: Int
-    icebankCost: Int
-    hxCost: Int
+    standardChillerEfficiency: Float
+    nonIceChillerCost: Float
+    icemakingChillerCost: Float
+    icebankCost: Float
+    hxCost: Float
     hours: HoursInput
   }
 `;
@@ -85,24 +85,24 @@ const Building = `
     createdAt: String
     chillerType: String
     template: String
-    standardChillerEfficiency: Int
-    nonIceChillerCost: Int
-    icemakingChillerCost: Int
-    icebankCost: Int
-    hxCost: Int
+    standardChillerEfficiency: Float
+    nonIceChillerCost: Float
+    icemakingChillerCost: Float
+    icebankCost: Float
+    hxCost: Float
     hours: Hours
-    existingRate: Int
-    iceStorageRate: Int
+    existingRate: Float
+    iceStorageRate: Float
     airCooled: Boolean
-    chillerTonnage: Int
-    chillerEfficiency: Int
-    ddChillerEfficiency: Int
-    iceMakingEfficiency: Int
-    monthsCooling: Int
-    downsizeDuctSavings: Int
-    downsizePipeSavings: Int
-    roundDuctSavings: Int
-    additionalCostsIceStorageInstallation: Int
+    chillerTonnage: Float
+    chillerEfficiency: Float
+    ddChillerEfficiency: Float
+    iceMakingEfficiency: Float
+    monthsCooling: Float
+    downsizeDuctSavings: Float
+    downsizePipeSavings: Float
+    roundDuctSavings: Float
+    additionalCostsIceStorageInstallation: Float
     user: String
   }
 `;
