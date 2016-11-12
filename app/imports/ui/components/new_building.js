@@ -107,7 +107,7 @@ class NewBuilding extends React.Component {
           </div>
           <div className="form-group">
             <label htmlFor="monthsCooling">Months of Cooling</label>
-            <select ref="monthsCooling" id="monthsCooling" className="form-control" onChange={this.loadMonths}>
+            <select ref="monthsCooling" id="monthsCooling" className="form-control">
               <option value="4">4</option>
               <option value="5">5</option>
               <option value="6">6</option>
@@ -122,7 +122,7 @@ class NewBuilding extends React.Component {
           <h2 className="section-start">Chiller Plant Info</h2>
           <div className="form-group">
             <label htmlFor="chillerType">Air-Cooled / Water-Cooled</label>
-            <select ref="chillerType" id="chillerType" className="form-control" onChange={this.loadChillerType}>
+            <select ref="chillerType" id="chillerType" className="form-control">
               <option value="Air-Cooled">Air-Cooled</option>
               <option value="Water-Cooled">Water-Cooled</option>
             </select>
@@ -134,21 +134,21 @@ class NewBuilding extends React.Component {
           <div className="form-group">
             <label htmlFor="standardChillerEfficiency">Chiller Efficiency, standard chiller</label>
             <div className="input-group">
-              <input ref="standardChillerEfficiency" onChange={this.loadStandardChillerEfficiency} className="form-control" id="standardChillerEfficiency" type="number"/>
+              <input ref="standardChillerEfficiency" className="form-control" id="standardChillerEfficiency" type="number"/>
               <div className="input-group-addon">kW/ton</div>
             </div>
           </div>
           <div className="form-group">
             <label htmlFor="ddChillerEfficiency">Dual-Duty Chiller Efficiency</label>
             <div className="input-group">
-              <input ref="ddChillerEfficiency" onChange={this.loadDdChillerEfficiency} className="form-control" id="ddChillerEfficiency" type="number"/>
+              <input ref="ddChillerEfficiency" className="form-control" id="ddChillerEfficiency" type="number"/>
               <div className="input-group-addon">kW/ton</div>
             </div>
           </div>
           <div className="form-group">
             <label htmlFor="iceMakingEfficiency">Ice-Making Chiller Efficiency</label>
             <div className="input-group">
-              <input ref="iceMakingEfficiency" onChange={this.loadIceMakingEfficiency} className="form-control" id="iceMakingEfficiency" type="number"/>
+              <input ref="iceMakingEfficiency" className="form-control" id="iceMakingEfficiency" type="number"/>
               <div className="input-group-addon">kW/ton</div>
             </div>
           </div>
@@ -157,7 +157,7 @@ class NewBuilding extends React.Component {
             <label htmlFor="nonIceChillerCost">Non Ice Chiller Cost:</label>
             <div className="input-group">
               <div className="input-group-addon">$</div>
-              <input ref="nonIceChillerCost" onChange={this.loadNonIceChillerCost} className="form-control" id="nonIceChillerCost" type="number" placeholder="500"/>
+              <input ref="nonIceChillerCost" className="form-control" id="nonIceChillerCost" type="number" placeholder="500"/>
               <div className="input-group-addon">/ton</div>
             </div>
           </div>

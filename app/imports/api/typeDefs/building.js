@@ -28,10 +28,10 @@ const BuildingInput = `
 
   input BuildingInput {
     name: String
-    existingRate: Float
-    iceStorageRate: Float
+    existingRate: String
+    iceStorageRate: String
     chillerType: String
-    chillerTonnage: Float
+    chillerTonnage: String
     chillerEfficiency: Float
     ddChillerEfficiency: Float
     iceMakingEfficiency: Float
@@ -91,10 +91,10 @@ const Building = `
     icebankCost: Float
     hxCost: Float
     hours: Hours
-    existingRate: Float
-    iceStorageRate: Float
+    existingRate: String
+    iceStorageRate: String
     airCooled: Boolean
-    chillerTonnage: Float
+    chillerTonnage: String
     chillerEfficiency: Float
     ddChillerEfficiency: Float
     iceMakingEfficiency: Float

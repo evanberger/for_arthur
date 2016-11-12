@@ -1,0 +1,123 @@
+import { Meteor } from 'meteor/meteor';
+import { Templates } from '../collections';
+
+Meteor.startup(function () {
+  if (!Templates.find().count()) {
+    Templates.insert({
+      name: 'College',
+      hours: {
+        hour1: 0.2,
+        hour2: 0.3,
+        hour3: 0.2,
+        hour4: 0.2,
+        hour5: 0.2,
+        hour6: 0.2,
+        hour7: 0.2,
+        hour8: 0.2,
+        hour9: 0.2,
+        hour10: 0.2,
+        hour11: 0.2,
+        hour12: 0.2,
+        hour13: 0.2,
+        hour14: 0.2,
+        hour15: 0.2,
+        hour16: 0.2,
+        hour17: 0.2,
+        hour18: 0.2,
+        hour19: 0.2,
+        hour20: 0.2,
+        hour21: 0.2,
+        hour22: 0.2,
+        hour23: 0.2,
+        hour24: 0.2,
+      }
+    });
+    Templates.insert({
+      name: 'Office Building',
+      hours: {
+        hour1: 0.2,
+        hour2: 0.3,
+        hour3: 0.2,
+        hour4: 0.2,
+        hour5: 0.2,
+        hour6: 0.2,
+        hour7: 0.2,
+        hour8: 0.2,
+        hour9: 0.2,
+        hour10: 0.2,
+        hour11: 0.2,
+        hour12: 0.2,
+        hour13: 0.2,
+        hour14: 0.2,
+        hour15: 0.2,
+        hour16: 0.2,
+        hour17: 0.2,
+        hour18: 0.2,
+        hour19: 0.2,
+        hour20: 0.2,
+        hour21: 0.2,
+        hour22: 0.2,
+        hour23: 0.2,
+        hour24: 0.2,
+      }
+    });
+    Templates.insert({
+      name: 'High School',
+      hours: {
+        hour1: 0.2,
+        hour2: 0.3,
+        hour3: 0.2,
+        hour4: 0.2,
+        hour5: 0.2,
+        hour6: 0.2,
+        hour7: 0.2,
+        hour8: 0.2,
+        hour9: 0.2,
+        hour10: 0.2,
+        hour11: 0.2,
+        hour12: 0.2,
+        hour13: 0.2,
+        hour14: 0.2,
+        hour15: 0.2,
+        hour16: 0.2,
+        hour17: 0.2,
+        hour18: 0.2,
+        hour19: 0.2,
+        hour20: 0.2,
+        hour21: 0.2,
+        hour22: 0.2,
+        hour23: 0.2,
+        hour24: 0.2,
+      }
+    });
+    Templates.insert({
+      name: 'Middle School',
+      hours: {
+        hour1: 0.2,
+        hour2: 0.3,
+        hour3: 0.2,
+        hour4: 0.2,
+        hour5: 0.2,
+        hour6: 0.2,
+        hour7: 0.2,
+        hour8: 0.2,
+        hour9: 0.2,
+        hour10: 0.2,
+        hour11: 0.2,
+        hour12: 0.2,
+        hour13: 0.2,
+        hour14: 0.2,
+        hour15: 0.2,
+        hour16: 0.2,
+        hour17: 0.2,
+        hour18: 0.2,
+        hour19: 0.2,
+        hour20: 0.2,
+        hour21: 0.2,
+        hour22: 0.2,
+        hour23: 0.2,
+        hour24: 0.2,
+      }
+    });
+  }
+});
