@@ -9,20 +9,49 @@ const BUILDINGS_QUERY = gql`
   query {
     buildings {
       name
-      createdAt
       existingRate
       iceStorageRate
       chillerType
       chillerTonnage
+      template
       standardChillerEfficiency
       ddChillerEfficiency
       iceMakingEfficiency
-      monthsCooling
+      nonIceChillerCost
+      icemakingChillerCost
+      icebankCost
+      hxCost
+      rebate
+      additionalCostsIceStorageInstallation
       downsizeDuctSavings
       downsizePipeSavings
       roundDuctSavings
-      additionalCostsIceStorageInstallation
-      user
+      hours {
+        hour1
+        hour2
+        hour3
+        hour4
+        hour5
+        hour6
+        hour7
+        hour8
+        hour9
+        hour10
+        hour11
+        hour12
+        hour13
+        hour14
+        hour15
+        hour16
+        hour17
+        hour18
+        hour19
+        hour20
+        hour21
+        hour22
+        hour23
+        hour24
+      }
     }
   }
 `;

@@ -91,6 +91,7 @@ const Building = `
     icebankCost: Float
     hxCost: Float
     hours: Hours
+    rebate: Float
     existingRate: String
     iceStorageRate: String
     airCooled: Boolean
