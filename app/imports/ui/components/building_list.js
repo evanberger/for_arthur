@@ -4,11 +4,15 @@ import Map from './common/map';
 class BuildingList extends React.Component {
   renderBuilding(building) {
     return (
-      <div>
-        <h2>{building.name}</h2>
-        <div>{building.chillerType}</div>
-      </div>
-    )
+      <tr>
+        <td>
+          {building.name && <div>{building.name}</div>}
+        </td>
+        <td>
+          {building.chillerType && <div>{building.chillerType}</div>}
+        </td>
+      </tr>
+    );
   }
 
   render() {
@@ -17,9 +21,15 @@ class BuildingList extends React.Component {
     if (loading) return null;
 
     return (
-      <div className="buildings">
-        {buildings.map(this.renderBuilding)}
-      </div>
+      <table className="buildings">
+        <thead>
+          <td><strong>Name</strong></td>
+          <td><strong>Chiller Type</strong></td>
+        </thead>
+        <tbody>
+          {buildings.map(this.renderBuilding)}
+        </tbody>
+      </table>
     )
   }
 };
