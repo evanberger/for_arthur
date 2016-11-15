@@ -16,7 +16,7 @@ class BuildingList extends React.Component {
   }
 
   render() {
-    const {loading, buildings} = this.props;
+    const {loading, buildings = []} = this.props;
 
     if (loading) return null;
 

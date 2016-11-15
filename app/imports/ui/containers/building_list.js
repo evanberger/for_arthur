@@ -58,7 +58,6 @@ const BUILDINGS_QUERY = gql`
 
 const ComponentWithData = graphql(BUILDINGS_QUERY, {
   props({ data: { loading, buildings } }) {
-    console.log(buildings)
     return { loading, buildings };
   }
 })(Component);
